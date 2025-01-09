@@ -10,7 +10,8 @@
             "name": "Rust Launch Cargo",
             "program": "${workspaceFolder}/target/debug/hello_world",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build"
         },
         {
             "type": "lldb",
@@ -18,7 +19,8 @@
             "name": "Debug",
             "program": "${workspaceFolder}/target/debug/hello_world",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build release"
         }
     ]
 }
